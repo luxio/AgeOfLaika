@@ -46,26 +46,23 @@
                                     <rect key="frame" x="16" y="95" width="79" height="21"/>
                                 </variation>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AgeOfLaika.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Fyb-1L-pNA">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="326" width="400" height="248"/>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="435" width="375" height="232"/>
-                                </variation>
-                            </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Human Years Here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zw3-8a-Hgg">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="17" y="57" width="368" height="30"/>
+                                    <rect key="frame" x="16" y="57" width="288" height="30"/>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="16" y="57" width="343" height="30"/>
                                 </variation>
                             </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AgeOfLaika.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="NCJ-en-y6d">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -73,8 +70,8 @@
                                 <exclude reference="4vi-DR-SFf"/>
                                 <exclude reference="oa5-hm-GyY"/>
                                 <exclude reference="fT5-cs-nuv"/>
-                                <exclude reference="Fyb-1L-pNA"/>
                                 <exclude reference="Zw3-8a-Hgg"/>
+                                <exclude reference="NCJ-en-y6d"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -82,12 +79,13 @@
                                 <include reference="4vi-DR-SFf"/>
                                 <include reference="oa5-hm-GyY"/>
                                 <include reference="fT5-cs-nuv"/>
-                                <include reference="Fyb-1L-pNA"/>
                                 <include reference="Zw3-8a-Hgg"/>
+                                <include reference="NCJ-en-y6d"/>
                             </mask>
                         </variation>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="HumanYearsTextField" destination="Zw3-8a-Hgg" id="0AS-i8-1lt"/>
                         <outlet property="dogYearsLabel" destination="fT5-cs-nuv" id="ovW-bI-ZVM"/>
@@ -95,7 +93,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="143.25" y="151.875"/>
+            <point key="canvasLocation" x="142.5" y="151"/>
         </scene>
     </scenes>
     <resources>
