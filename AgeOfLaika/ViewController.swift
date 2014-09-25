@@ -14,8 +14,6 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var dogYearsLabel: UILabel!
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -33,5 +31,19 @@ class ViewController: UIViewController {
         humanYearsTextField.resignFirstResponder()
     }
 
+    @IBAction func convertToRealDogYearsButtonPressed(sender: UIButton) {
+        dogYearsLabel.hidden = false
+        let humanYears = (humanYearsTextField.text as NSString).doubleValue
+        var dogYears:Double
+        
+        if humanYears < 2 {
+            dogYears = humanYears * 10.5
+        } else {
+            dogYears = 21 + (humanYears-2) * 4
+        }
+        dogYearsLabel.text = "\(dogYears)"
+        humanYearsTextField.resignFirstResponder()
+    }
+    
 }
 
